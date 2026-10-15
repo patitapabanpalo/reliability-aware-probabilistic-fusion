@@ -1,0 +1,9 @@
+# Core numerical and data-processing dependencies
+numpy
+pandas
+scikit-learn
+
+# Deep learning
+torch
+
+PyYAML

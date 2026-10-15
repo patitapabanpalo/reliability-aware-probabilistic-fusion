@@ -1,0 +1,8 @@
+# Missing-modality schedule used by the HAIM full-model training code.
+# Each probability refers to the number of unavailable modalities in a batch.
+
+sampling:
+  all_modalities: 0.50
+  one_missing: 0.20
+  two_missing: 0.20
+  three_missing: 0.10

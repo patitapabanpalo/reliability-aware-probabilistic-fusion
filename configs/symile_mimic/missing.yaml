@@ -1,0 +1,13 @@
+# Missing-modality sampling used during Symile-MIMIC training.
+# Probabilities sum to 1.0 across the seven availability patterns.
+
+sampling:
+  all_modalities: 0.25
+  one_missing:
+    cxr: 0.15
+    ecg: 0.15
+    labs: 0.15
+  two_missing:
+    cxr_only: 0.10
+    ecg_only: 0.10
+    labs_only: 0.10

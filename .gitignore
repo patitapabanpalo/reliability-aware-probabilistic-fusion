@@ -1,0 +1,56 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments and local environment variables
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Data (clinical/source data must never be committed)
+data/
+data_npy/
+processed/
+raw/
+
+# Experiment outputs
+results/
+experiment_results/
+outputs/
+checkpoints/
+logs/
+runs/
+wandb/
+
+# Model checkpoints and generated arrays
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+
+# Temporary files
+*.tmp
+*.log
+
+# Clinical/tabular exports (whitelist any deliberately public examples explicitly)
+*.csv
+*.parquet
+*.feather

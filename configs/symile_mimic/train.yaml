@@ -1,0 +1,24 @@
+# Main Symile-MIMIC training configuration.
+# Values are extracted from the current proposed-method training code.
+
+experiment:
+  task: cardiomegaly
+  seeds: [0, 1, 2, 3, 4]
+
+model:
+  embedding_dim: 128
+  latent_dim: 32
+  fusion: reliability
+
+training:
+  seed: 42
+  batch_size: 16
+  val_batch_size: 32
+  epochs: 10
+  learning_rate: 0.001
+
+loss:
+  lambda_unimodal: 0.5
+  lambda_reliability: 0.5
+  lambda_consistency: 0.25
+  reliability_margin: 0.05

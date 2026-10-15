@@ -1,0 +1,8 @@
+# Representation-space corruption used for HAIM robustness evaluation.
+# Inputs are standardized before these perturbations are applied.
+
+levels:
+  clean:    {severity: 0, mask_probability: 0.00, noise_std: 0.00}
+  mild:     {severity: 1, mask_probability: 0.10, noise_std: 0.10}
+  moderate: {severity: 2, mask_probability: 0.30, noise_std: 0.30}
+  severe:   {severity: 3, mask_probability: 0.50, noise_std: 0.50}

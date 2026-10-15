@@ -1,0 +1,20 @@
+# Input-space corruption settings used by the Symile-MIMIC experiments.
+
+severities: [0, 1, 2, 3]
+
+cxr:
+  1: {blur_kernel: 3,  blur_strength: 0.25, noise_std: 0.02}
+  2: {blur_kernel: 7,  blur_strength: 0.55, noise_std: 0.05}
+  3: {blur_kernel: 13, blur_strength: 0.85, noise_std: 0.10}
+
+ecg:
+  1: {noise_std: 0.05}
+  2: {noise_std: 0.15}
+  3: {noise_std: 0.30}
+
+labs:
+  1: {replacement_strength: 0.25}
+  2: {replacement_strength: 0.60}
+  3: {replacement_strength: 1.00}
+
+reliability_margin: 0.05
